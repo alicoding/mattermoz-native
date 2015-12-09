@@ -6,7 +6,7 @@ var menu = require('./menu.js');
 var settings = require('./settings.js');
 var teams = require("./teams.js");
 
-settings.load();
+settings.load(app.getAppPath(), app.getPath('userData'));
 chromeArgs.apply(settings);
 teams.listen();
 
@@ -54,7 +54,7 @@ app.on('ready', function() {
       settings.set('window:width', bounds.width);
       settings.set('window:height', bounds.height);
     }
-    settings.saveState();
+    settings.saveState(app.getPath('userData'));
 
     if (process.platform != 'darwin') { return; }
     if (quitting) { return; }
