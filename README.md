@@ -6,7 +6,7 @@ An application for [Mattermost](http://mattermost.org) for OS X, Windows, and Li
 
 ![screenshot on OS X](https://cloud.githubusercontent.com/assets/75445/10773661/f6ba012e-7cfc-11e5-9873-e685ea80c860.png)
 
-## Installation
+## Installation by Ali
 
 First, clone down this project, and then from within that directory in your favorite terminal run:
 
