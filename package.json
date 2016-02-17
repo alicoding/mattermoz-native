@@ -1,8 +1,8 @@
 {
-  "name": "matterfront",
+  "name": "mattermoz",
   "version": "1.2.1",
-  "description": "Mattermost frontend app powered by electron",
-  "homepage": "https://github.com/lloeki/matterfront",
+  "description": "Mattermoz frontend app powered by electron",
+  "homepage": "https://github.com/alicoding/mattermoz",
   "author": "Brian Vanderbusch <brian@hackerhappyhour.com> (https://github.com/H3Chief)",
   "contributors": [
     "Loic Nageleisen <loic.nageleisen@gmail.com> (http://raptu.re)",
@@ -10,7 +10,7 @@
   ],
   "main": "./src/main.js",
   "scripts": {
-    "build": "npm run js && electron-packager . Matterfront --out=dist --ignore='^/dist$' --asar --platform=all --arch=all --version=$npm_package_electronVersion --app-bundle-id='org.matterfront.app' --app-version=$npm_package_version --helper-bundle-id='org.matterfront.app.helper' --overwrite --icon=resources/mattermost",
+    "build": "npm run js && electron-packager . mattermoz --out=dist --ignore='^/dist$' --asar --platform=all --arch=all --version=$npm_package_electronVersion --app-bundle-id='org.matterfront.app' --app-version=$npm_package_version --helper-bundle-id='org.matterfront.app.helper' --overwrite --icon=resources/mattermost",
     "js": "webpack",
     "js-watch": "webpack --watch",
     "lint": "echo Lint started && eslint ./src --ignore-path .gitignore && echo Lint success",
@@ -23,7 +23,7 @@
   "electronVersion": "0.36.2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lloeki/matterfront"
+    "url": "https://github.com/alicoding/mattermoz"
   },
   "keywords": [
     "Mattermost",
@@ -31,7 +31,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lloeki/matterfront/issues"
+    "url": "https://github.com/alicoding/mattermoz/issues"
   },
   "devDependencies": {
     "babel-core": "~6.3.13",
